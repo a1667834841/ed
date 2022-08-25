@@ -1,0 +1,113 @@
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.57:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-060-619
+huan_an_exam_batch ±ª∑√Œ ,params:  [{'userName': '32082819710925305X', 'password': '25305X', 'years': [2022]}]
+«Î«ÛÕ¯÷∑: https://jshazj.59iedu.com/index
+ ‰»Î’À∫≈ 32082819710925305X √‹¬Î:*******ÕÍ≥…
+ªÒ»°—È÷§¬Î£∫5469
+cookies: {'JSESSIONID': 'E1022673EC9D92EF8F44E69CDB4C0D60', 'CNZZDATA1279634989': '71899272-1661397222-%7C1661397222', 'UM_distinctid': '182d31ab2e9136-0691dc7bad348f-6701434-1fa400-182d31ab2ea4d3'}
+Message: 
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x003478B3+2193587]
+	Ordinal0 [0x002E0681+1771137]
+	Ordinal0 [0x001F41A8+803240]
+	Ordinal0 [0x002224A0+992416]
+	Ordinal0 [0x0022273B+993083]
+	Ordinal0 [0x0024F7C2+1177538]
+	Ordinal0 [0x0023D7F4+1103860]
+	Ordinal0 [0x0024DAE2+1170146]
+	Ordinal0 [0x0023D5C6+1103302]
+	Ordinal0 [0x002177E0+948192]
+	Ordinal0 [0x002186E6+952038]
+	GetHandleVerifier [0x005F0CB2+2738370]
+	GetHandleVerifier [0x005E21B8+2678216]
+	GetHandleVerifier [0x003D17AA+512954]
+	GetHandleVerifier [0x003D0856+509030]
+	Ordinal0 [0x002E743B+1799227]
+	Ordinal0 [0x002EBB68+1817448]
+	Ordinal0 [0x002EBC55+1817685]
+	Ordinal0 [0x002F5230+1856048]
+	BaseThreadInitThunk [0x7686FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x772A7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x772A7A6E+238]
+
+err:Traceback (most recent call last):
+  File "d:\project\py\ed\huan_an_bussiness.py", line 299, in exam
+    answer_exam(driver)
+  File "d:\project\py\ed\huan_an_bussiness.py", line 148, in answer_exam
+    EC.presence_of_element_located((By.CLASS_NAME,"exam-tit"))
+  File "C:\Users\16678\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 90, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x003478B3+2193587]
+	Ordinal0 [0x002E0681+1771137]
+	Ordinal0 [0x001F41A8+803240]
+	Ordinal0 [0x002224A0+992416]
+	Ordinal0 [0x0022273B+993083]
+	Ordinal0 [0x0024F7C2+1177538]
+	Ordinal0 [0x0023D7F4+1103860]
+	Ordinal0 [0x0024DAE2+1170146]
+	Ordinal0 [0x0023D5C6+1103302]
+	Ordinal0 [0x002177E0+948192]
+	Ordinal0 [0x002186E6+952038]
+	GetHandleVerifier [0x005F0CB2+2738370]
+	GetHandleVerifier [0x005E21B8+2678216]
+	GetHandleVerifier [0x003D17AA+512954]
+	GetHandleVerifier [0x003D0856+509030]
+	Ordinal0 [0x002E743B+1799227]
+	Ordinal0 [0x002EBB68+1817448]
+	Ordinal0 [0x002EBC55+1817685]
+	Ordinal0 [0x002F5230+1856048]
+	BaseThreadInitThunk [0x7686FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x772A7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x772A7A6E+238]
+
+
+127.0.0.1 - - [25/Aug/2022 11:46:08] "POST /huan_an/exam/batch HTTP/1.1" 200 -
+huan_an_exam_batch ±ª∑√Œ ,params:  [{'userName': '320882199405010412', 'password': '199451gjq', 'years': [2022]}]
+«Î«ÛÕ¯÷∑: https://jshazj.59iedu.com/index
+ ‰»Î’À∫≈ 320882199405010412 √‹¬Î:*******ÕÍ≥…
+ªÒ»°—È÷§¬Î£∫8248
+cookies: {'JSESSIONID': '88F7C1AF8755C0F7A5C238DDE1B13CA6', 'CNZZDATA1279634989': '2067051512-1661397222-%7C1661397222', 'UM_distinctid': '182d31c9d80c-0bbbdd8158c106-6701434-1fa400-182d31c9d8144b'}
+Ω¯»Îøº ‘“≥√Ê
+driver.current_url:https://hwexamv1.59iedu.com/exam/#/fighting/d6bba1ec-c313-4f3e-be0a-4b86b842298c/2/-1?%7B%22objectList%22:%5B%7B%22objectId%22:%222c9880ee7f6e46cd0180b2291c653141%22,%22type%22:%22SchemeId%22%7D,%7B%22objectId%22:%222c9880ff803fef9a01809c84a872470b%22,%22type%22:%22CourseId%22%7D,%7B%22objectId%22:%222c9880cc7f6e48be0180b2291cf63ace%22,%22type%22:%22LearningId%22%7D,%7B%22objectId%22:%22source%22,%22type%22:%22student%22%7D%5D,%22extractQuestionObjects%22:%5B%7B%22objectId%22:%222c9880ee7f6e46cd0180b2291c653141%22,%22type%22:%22SchemeId%22%7D,%7B%22objectId%22:%222c9880ff803fef9a01809c84a872470b%22,%22type%22:%22CourseId%22%7D,%7B%22objectId%22:%222c9880cc7f6e48be0180b2291cf63ace%22,%22type%22:%22LearningId%22%7D,%7B%22objectId%22:%22source%22,%22type%22:%22student%22%7D%5D%7D_%25E3%2580%258A%25E6%2595%25B0%25E5%25AD%2597%25E7%25BB%258F%25E6%25B5%258E%25E6%258A%2580%25E8%2583%25BD%25E5%259F%25B9%25E8%25AE%25AD%25E4%25B8%2593%25E9%25A2%2598%25E3%2580%258B_https%253A%252F%252Fjshazj.59iedu.com%252Fweb%252Ffront%252FcoursePaper%252FrightNowGo%253Fid%253Dd6bba1ec-c313-4f3e-be0a-4b86b842298c%2526schemeId%253D2c9880ee7f6e46cd0180b2291c653141%2526courseId%253D2c9880ff803fef9a01809c84a872470b
+Ã‚ƒø ˝¡ø£∫50
+2022 Ω· ¯
+127.0.0.1 - - [25/Aug/2022 11:47:55] "POST /huan_an/exam/batch HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.57:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-060-619
+huan_an_exam_batch ±ª∑√Œ ,params:  [{'userName': '320882198701060620', 'password': 'kxy112233', 'years': [2022]}]
+«Î«ÛÕ¯÷∑: https://jshazj.59iedu.com/index
+ ‰»Î’À∫≈ 320882198701060620 √‹¬Î:*******ÕÍ≥…
+ªÒ»°—È÷§¬Î£∫8773
+cookies: {'JSESSIONID': '71FC626CC66706D95FABA4B8A38708B4', 'CNZZDATA1279634989': '42264587-1661402052-%7C1661402052', 'UM_distinctid': '182d35943421f8-0c98217390dc7a-6701434-1fa400-182d359434347d'}
+my_course_url:https://jshazj.59iedu.com/center/myStudy/goods/detail?year=2022
+Ω¯»Îøº ‘“≥√Ê
+driver.current_url:https://hwexamv1.59iedu.com/exam/#/fighting/d6bba1ec-c313-4f3e-be0a-4b86b842298c/2/-1?%7B%22objectList%22:%5B%7B%22objectId%22:%222c9880ee7f6e46cd0180b2291c653141%22,%22type%22:%22SchemeId%22%7D,%7B%22objectId%22:%222c9880ff803fef9a01809c84a872470b%22,%22type%22:%22CourseId%22%7D,%7B%22objectId%22:%222c9880cc7f6e48be0180b2291cf63ace%22,%22type%22:%22LearningId%22%7D,%7B%22objectId%22:%22source%22,%22type%22:%22student%22%7D%5D,%22extractQuestionObjects%22:%5B%7B%22objectId%22:%222c9880ee7f6e46cd0180b2291c653141%22,%22type%22:%22SchemeId%22%7D,%7B%22objectId%22:%222c9880ff803fef9a01809c84a872470b%22,%22type%22:%22CourseId%22%7D,%7B%22objectId%22:%222c9880cc7f6e48be0180b2291cf63ace%22,%22type%22:%22LearningId%22%7D,%7B%22objectId%22:%22source%22,%22type%22:%22student%22%7D%5D%7D_%25E3%2580%258A%25E6%2595%25B0%25E5%25AD%2597%25E7%25BB%258F%25E6%25B5%258E%25E6%258A%2580%25E8%2583%25BD%25E5%259F%25B9%25E8%25AE%25AD%25E4%25B8%2593%25E9%25A2%2598%25E3%2580%258B_https%253A%252F%252Fjshazj.59iedu.com%252Fweb%252Ffront%252FcoursePaper%252FrightNowGo%253Fid%253Dd6bba1ec-c313-4f3e-be0a-4b86b842298c%2526schemeId%253D2c9880ee7f6e46cd0180b2291c653141%2526courseId%253D2c9880ff803fef9a01809c84a872470b
+Ã‚ƒø ˝¡ø£∫50
+2022 Ω· ¯
+127.0.0.1 - - [25/Aug/2022 12:54:14] "POST /huan_an/exam/batch HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.57:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-060-619
+127.0.0.1 - - [25/Aug/2022 17:22:18] "GET /form HTTP/1.1" 200 -
+127.0.0.1 - - [25/Aug/2022 17:35:30] "GET /form HTTP/1.1" 200 -

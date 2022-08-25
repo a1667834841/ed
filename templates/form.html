@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>淮安一键考试页面</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/layui/2.7.6/css/layui.css" media="all">
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+</head>
+
+<body>
+
+    <blockquote class="layui-elem-quote layui-text">
+        淮安一键考试页面<a href="https://jshazj.59iedu.com/">淮安教育地址</a>
+        填写正确的账号，密码，需要考试的年份
+        <span style="color:red;font-weight: 300;">注意：年份需要使用,隔开。例如：2017,2018</span>
+    </blockquote>
+
+
+    <!-- <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+        <legend>单账号考试</legend>
+    </fieldset>
+
+    <form class="layui-form" >
+        <div class="layui-form-item">
+            <label class="layui-form-label">账号</label>
+            <div class="layui-input-block">
+                <input type="text" name="userName" lay-verify="title" autocomplete="off" placeholder="请输入账号"
+                    class="layui-input">
+            </div>
+        </div>
+
+
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-block">
+                <input placeholder="请输入密码" class="layui-input" name="password"></input>
+            </div>
+        </div>
+
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">年份</label>
+            <div class="layui-input-block">
+                <textarea placeholder="请输入年份" class="layui-textarea" name="years"></textarea>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn" lay-submit="" lay-filter="sub">立即提交</button>
+            </div>
+        </div> -->
+
+        <hr class="layui-border-black">
+
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+            <legend>批量考试</legend>
+        </fieldset>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">账号信息</label>
+            <div class="layui-input-block">
+                <textarea lay-verify="batchArea" id="batchArea" placeholder="请输入账号-密码-年份 示例：123456-123456-2017,2018" class="layui-textarea"
+                    name="batchData"></textarea>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button id="batchSub" type="button" class="layui-btn" lay-filter="sub-batch">立即提交</button>
+            </div>
+        </div>
+    </form>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/layui/2.7.6/layui.js" charset="utf-8"></script>
+    <!-- 注意：如果你直接复制所有代码到本地，上述 JS 路径需要改成你本地的 -->
+    <script>
+        layui.use(['form', 'layedit', 'laydate'], function () {
+            var form = layui.form
+                , layer = layui.layer
+                , layedit = layui.layedit
+                , $ = layui.jquery
+                , laydate = layui.laydate;
+
+
+            //创建一个编辑器
+            var editIndex = layedit.build('LAY_demo_editor');
+
+            // 自定义验证规则
+            // form.verify({
+            //     // title: function (value) {
+            //     //     if (value.length < 1) {
+            //     //         return '标题至少得5个字符啊';
+            //     //     }
+            //     // }
+            //     // , content: function (value) {
+            //     //     layedit.sync(editIndex);
+            //     // },
+            //     batchArea:function(value) {
+            //         var regu = '[0-9a-zA-Z]*-[a-zA-Z0-9]*-[0-9]*'
+            //         if (!regu.test(value)) {
+            //             return '信息不符合规则';
+            //         }
+                    
+            //     }
+            // });
+
+
+            //监听提交
+            form.on('submit(sub)', function (data) {
+
+
+                var insertCheckData = JSON.stringify(data.field);
+                $.ajax({
+                    url: '/huan_an/exam',
+                    type: 'post',
+                    dataType: 'json',
+                    contentType: "application/json",
+                    data: insertCheckData,
+                    success: function (res) {
+                        layer.msg("考试完成");
+                        // var index = parent.layer.getFrameIndex(window.name);
+                        // parent.location.reload(); //刷新父页面
+                        // setTimeout(function () { parent.layer.close(index) }, 500);//延迟
+
+                    }
+                })
+
+
+                return false;
+            });
+
+
+            $("#batchSub").click(function () {
+                layer.msg("开始考试");
+                $(this).addClass('layui-btn-disabled');
+                var batchData = $('#batchArea').val()
+                var batchUser = []
+                console.log(batchData)
+                var batchStrs = batchData.split("\n")
+                for(var index in batchStrs) {
+                    var line = batchStrs[index]
+                    var userInfo = {}
+                    var userInfoStr = line.split("-")
+                    userInfo["userName"] = userInfoStr[0]
+                    userInfo["password"] = userInfoStr[1]
+                    userInfo["years"] = []
+                    var years = userInfoStr[2].split(",")
+                    for(var i in years){
+                        userInfo["years"].push(parseInt(years[i]))
+                    }
+                    batchUser.push(userInfo)
+                }
+                var insertCheckData = JSON.stringify(batchUser);
+                console.log("batchUser:",batchUser)
+                $.ajax({
+                    url: '/huan_an/exam/batch',
+                    type: 'post',
+                    dataType: 'json',
+                    contentType: "application/json",
+                    data: insertCheckData,
+                    success: function (res) {
+                        layer.msg("考试完成");
+                        $("#batchSub").removeClass('layui-btn-disabled');
+                        // var index = parent.layer.getFrameIndex(window.name);
+                        // parent.location.reload(); //刷新父页面
+                        // setTimeout(function () { parent.layer.close(index) }, 500);//延迟
+
+                    }
+                })
+
+
+                return false;
+            });
+
+
+
+        });
+    </script>
+
+</body>
+
+</html>
