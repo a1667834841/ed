@@ -1,5 +1,4 @@
 from time import sleep
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 import io
 from PIL import Image
@@ -74,7 +73,7 @@ def ocr_captcha(cap_path):
     cap_img.save(imgByteArr, format='PNG')
     cap_img_bytes = imgByteArr.getvalue()
     cap_number = ocr_api.ocr_captcha(cap_img_bytes)
-    # print(cap_number)
+    print(cap_number)
     return cap_number
 
 
@@ -106,3 +105,4 @@ def get_headers(driver):
         # print(request.response.headers) # <-- Response headers
     
     return headers
+

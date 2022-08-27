@@ -3,7 +3,7 @@ import logging
 
 
 logger = logging.getLogger('werkzeug') # grabs underlying WSGI logger
-handler = logging.FileHandler('logs/flask.log') # creates handler for the log file
+handler = logging.FileHandler('logs/flask.log', encoding='utf-8') # creates handler for the log file
 logger.addHandler(handler)
 
 

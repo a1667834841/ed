@@ -54,25 +54,33 @@
             </div>
         </div> -->
 
-        <hr class="layui-border-black">
+    <hr class="layui-border-black">
 
-        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-            <legend>批量考试</legend>
-        </fieldset>
-        <div class="layui-form-item layui-form-text">
-            <label class="layui-form-label">账号信息</label>
-            <div class="layui-input-block">
-                <textarea lay-verify="batchArea" id="batchArea" placeholder="请输入账号-密码-年份 示例：123456-123456-2017,2018" class="layui-textarea"
-                    name="batchData"></textarea>
-            </div>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+        <legend>批量考试</legend>
+    </fieldset>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">账号信息</label>
+        <div class="layui-input-block">
+            <textarea lay-verify="batchArea" id="batchArea" placeholder="请输入账号-密码-年份 示例：123456-123456-2017,2018"
+                class="layui-textarea" name="batchData"></textarea>
         </div>
+    </div>
 
-        <div class="layui-form-item">
-            <div class="layui-input-block">
-                <button id="batchSub" type="button" class="layui-btn" lay-filter="sub-batch">立即提交</button>
-            </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button id="batchSub" type="button" class="layui-btn" lay-filter="sub-batch">立即提交</button>
         </div>
+    </div>
     </form>
+
+
+    <label class="layui-form-label">日志</label>
+    <div class="layui-input-block">
+        <textarea id="areaLog" disabled="disabled" style="height: 400px;resize: none;"
+            class="layui-textarea"></textarea>
+    </div>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/layui/2.7.6/layui.js" charset="utf-8"></script>
@@ -104,7 +112,7 @@
             //         if (!regu.test(value)) {
             //             return '信息不符合规则';
             //         }
-                    
+
             //     }
             // });
 
@@ -141,7 +149,7 @@
                 var batchUser = []
                 console.log(batchData)
                 var batchStrs = batchData.split("\n")
-                for(var index in batchStrs) {
+                for (var index in batchStrs) {
                     var line = batchStrs[index]
                     var userInfo = {}
                     var userInfoStr = line.split("-")
@@ -149,13 +157,13 @@
                     userInfo["password"] = userInfoStr[1]
                     userInfo["years"] = []
                     var years = userInfoStr[2].split(",")
-                    for(var i in years){
+                    for (var i in years) {
                         userInfo["years"].push(parseInt(years[i]))
                     }
                     batchUser.push(userInfo)
                 }
                 var insertCheckData = JSON.stringify(batchUser);
-                console.log("batchUser:",batchUser)
+                console.log("batchUser:", batchUser)
                 $.ajax({
                     url: '/huan_an/exam/batch',
                     type: 'post',
@@ -169,6 +177,10 @@
                         // parent.location.reload(); //刷新父页面
                         // setTimeout(function () { parent.layer.close(index) }, 500);//延迟
 
+                    },
+                    error: function (msg) {
+                        layer.msg("考试失败");
+                        $("#batchSub").removeClass('layui-btn-disabled');
                     }
                 })
 
@@ -177,8 +189,30 @@
             });
 
 
+            setInterval(function () {
+                let tempLog = ""
+                let pattern = 'HTTP/1.1'
+                $.ajax({
+                    type: 'GET',
+                    url: '/log',
+                    contentType: 'text/html; charset=utf-8',
+                    success: function (data) {
+                        if (data.indexOf(pattern) == -1) {
+                            $('#areaLog').text($('#areaLog').text() + "\n" + data)
+                            tempLog = data
+                        }
+
+
+                    }
+                });
+            }, 1000);
 
         });
+
+
+
+
+
     </script>
 
 </body>

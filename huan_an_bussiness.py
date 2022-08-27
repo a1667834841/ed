@@ -38,6 +38,28 @@ def project_root_path(project_name=None, print_log=True):
     # if print_log: print(f'当前项目名称：{p_name}\r\n当前项目根路径：{root_path}')
     return root_path
 
+number_key = {
+    '0': Keys.NUMPAD0,
+    '1': Keys.NUMPAD1,
+    '2': Keys.NUMPAD2,
+    '3': Keys.NUMPAD3,
+    '4': Keys.NUMPAD4,
+    '5': Keys.NUMPAD5,
+    '6': Keys.NUMPAD6,
+    '7': Keys.NUMPAD7,
+    '8': Keys.NUMPAD8,
+    '9': Keys.NUMPAD9
+}
+
+
+def getNumberKey(number):
+    """
+    将season映射为字符串
+    :param season:
+    :return:
+    """
+    return number_key[number]
+
 
 '''
 登录获取cookies
@@ -75,19 +97,40 @@ def login(user_name="32030519841022041x",password="22041x",login_url="https://js
     # 读取验证码图片，并识别
     cap_number = ocr_captcha('img/captcha.png')
 
-    # 赋值 picValidateCode
-    picValidateCode.send_keys(cap_number)
-    picValidateCode.click()
-    sleep(5)
+    count = 0
+    while(True):
+        picValidateCode.clear()
+        # 赋值 picValidateCode
+        for n in cap_number:
+            print(n)
+            number_key = getNumberKey(n)
+            picValidateCode.send_keys(number_key)
+        sleep(1)
+        picValidateCode.click()
+        login_button = driver.find_element(By.XPATH, '/html/body/div[1]/div[2]/div/div[1]/div[1]/div/div/div/form/ul/li[4]/button')
+        login_button_class = login_button.get_attribute('class')
+        print("login_button_class:",login_button_class)
+        if 'disabled' in login_button_class:
+            sleep(0.2)
+            continue
+        elif count > 10:
+            break
+        else:
+            break
+        count = count+1
+
     logger.info("获取验证码：%s",cap_number)
     # 点击登录
-    driver.find_element(By.TAG_NAME, 'button').click()
     picValidateCode.send_keys(Keys.ENTER)
-
+    driver.find_element(By.XPATH, '/html/body/div[1]/div[2]/div/div[1]/div[1]/div/div/div/form/ul/li[4]/button').click()
     # 获取cookie
     cookies = get_cookies_dict(driver)
-    logger.info("cookies: %s",cookies)
-    sleep(10)
+    # logger.info("cookies: %s",cookies)
+
+    WebDriverWait(driver, 30).until(
+         EC.presence_of_element_located((By.XPATH,'/html/body/div[1]/div[2]/div/div[1]/div[1]/div/div/ul/li[1]/a/span'))
+    )
+
     driver.save_screenshot('img/index.png')
     return cookies
         
@@ -164,7 +207,7 @@ def answer_exam(driver=None):
         # 选择答案 并点击
         options = answer_option.find_elements(By.CLASS_NAME,"ans-b-1")
         for answer in answers:
-            # sleep(0.2)
+            sleep(0.2)
             options[int(answer)].find_element(By.TAG_NAME,"input").click()
         
     

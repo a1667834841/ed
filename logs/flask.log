@@ -1,113 +1,526 @@
 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
- * Running on http://192.168.20.57:5000
+ * Running on http://192.168.0.106:5000
 [33mPress CTRL+C to quit[0m
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 105-060-619
-huan_an_exam_batch ±ª∑√Œ ,params:  [{'userName': '32082819710925305X', 'password': '25305X', 'years': [2022]}]
-«Î«ÛÕ¯÷∑: https://jshazj.59iedu.com/index
- ‰»Î’À∫≈ 32082819710925305X √‹¬Î:*******ÕÍ≥…
-ªÒ»°—È÷§¬Î£∫5469
-cookies: {'JSESSIONID': 'E1022673EC9D92EF8F44E69CDB4C0D60', 'CNZZDATA1279634989': '71899272-1661397222-%7C1661397222', 'UM_distinctid': '182d31ab2e9136-0691dc7bad348f-6701434-1fa400-182d31ab2ea4d3'}
-Message: 
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x003478B3+2193587]
-	Ordinal0 [0x002E0681+1771137]
-	Ordinal0 [0x001F41A8+803240]
-	Ordinal0 [0x002224A0+992416]
-	Ordinal0 [0x0022273B+993083]
-	Ordinal0 [0x0024F7C2+1177538]
-	Ordinal0 [0x0023D7F4+1103860]
-	Ordinal0 [0x0024DAE2+1170146]
-	Ordinal0 [0x0023D5C6+1103302]
-	Ordinal0 [0x002177E0+948192]
-	Ordinal0 [0x002186E6+952038]
-	GetHandleVerifier [0x005F0CB2+2738370]
-	GetHandleVerifier [0x005E21B8+2678216]
-	GetHandleVerifier [0x003D17AA+512954]
-	GetHandleVerifier [0x003D0856+509030]
-	Ordinal0 [0x002E743B+1799227]
-	Ordinal0 [0x002EBB68+1817448]
-	Ordinal0 [0x002EBC55+1817685]
-	Ordinal0 [0x002F5230+1856048]
-	BaseThreadInitThunk [0x7686FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x772A7A9E+286]
-	RtlGetAppContainerNamedObjectPath [0x772A7A6E+238]
-
-err:Traceback (most recent call last):
-  File "d:\project\py\ed\huan_an_bussiness.py", line 299, in exam
-    answer_exam(driver)
-  File "d:\project\py\ed\huan_an_bussiness.py", line 148, in answer_exam
-    EC.presence_of_element_located((By.CLASS_NAME,"exam-tit"))
-  File "C:\Users\16678\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 90, in until
-    raise TimeoutException(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: 
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x003478B3+2193587]
-	Ordinal0 [0x002E0681+1771137]
-	Ordinal0 [0x001F41A8+803240]
-	Ordinal0 [0x002224A0+992416]
-	Ordinal0 [0x0022273B+993083]
-	Ordinal0 [0x0024F7C2+1177538]
-	Ordinal0 [0x0023D7F4+1103860]
-	Ordinal0 [0x0024DAE2+1170146]
-	Ordinal0 [0x0023D5C6+1103302]
-	Ordinal0 [0x002177E0+948192]
-	Ordinal0 [0x002186E6+952038]
-	GetHandleVerifier [0x005F0CB2+2738370]
-	GetHandleVerifier [0x005E21B8+2678216]
-	GetHandleVerifier [0x003D17AA+512954]
-	GetHandleVerifier [0x003D0856+509030]
-	Ordinal0 [0x002E743B+1799227]
-	Ordinal0 [0x002EBB68+1817448]
-	Ordinal0 [0x002EBC55+1817685]
-	Ordinal0 [0x002F5230+1856048]
-	BaseThreadInitThunk [0x7686FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x772A7A9E+286]
-	RtlGetAppContainerNamedObjectPath [0x772A7A6E+238]
-
-
-127.0.0.1 - - [25/Aug/2022 11:46:08] "POST /huan_an/exam/batch HTTP/1.1" 200 -
-huan_an_exam_batch ±ª∑√Œ ,params:  [{'userName': '320882199405010412', 'password': '199451gjq', 'years': [2022]}]
-«Î«ÛÕ¯÷∑: https://jshazj.59iedu.com/index
- ‰»Î’À∫≈ 320882199405010412 √‹¬Î:*******ÕÍ≥…
-ªÒ»°—È÷§¬Î£∫8248
-cookies: {'JSESSIONID': '88F7C1AF8755C0F7A5C238DDE1B13CA6', 'CNZZDATA1279634989': '2067051512-1661397222-%7C1661397222', 'UM_distinctid': '182d31c9d80c-0bbbdd8158c106-6701434-1fa400-182d31c9d8144b'}
-Ω¯»Îøº ‘“≥√Ê
-driver.current_url:https://hwexamv1.59iedu.com/exam/#/fighting/d6bba1ec-c313-4f3e-be0a-4b86b842298c/2/-1?%7B%22objectList%22:%5B%7B%22objectId%22:%222c9880ee7f6e46cd0180b2291c653141%22,%22type%22:%22SchemeId%22%7D,%7B%22objectId%22:%222c9880ff803fef9a01809c84a872470b%22,%22type%22:%22CourseId%22%7D,%7B%22objectId%22:%222c9880cc7f6e48be0180b2291cf63ace%22,%22type%22:%22LearningId%22%7D,%7B%22objectId%22:%22source%22,%22type%22:%22student%22%7D%5D,%22extractQuestionObjects%22:%5B%7B%22objectId%22:%222c9880ee7f6e46cd0180b2291c653141%22,%22type%22:%22SchemeId%22%7D,%7B%22objectId%22:%222c9880ff803fef9a01809c84a872470b%22,%22type%22:%22CourseId%22%7D,%7B%22objectId%22:%222c9880cc7f6e48be0180b2291cf63ace%22,%22type%22:%22LearningId%22%7D,%7B%22objectId%22:%22source%22,%22type%22:%22student%22%7D%5D%7D_%25E3%2580%258A%25E6%2595%25B0%25E5%25AD%2597%25E7%25BB%258F%25E6%25B5%258E%25E6%258A%2580%25E8%2583%25BD%25E5%259F%25B9%25E8%25AE%25AD%25E4%25B8%2593%25E9%25A2%2598%25E3%2580%258B_https%253A%252F%252Fjshazj.59iedu.com%252Fweb%252Ffront%252FcoursePaper%252FrightNowGo%253Fid%253Dd6bba1ec-c313-4f3e-be0a-4b86b842298c%2526schemeId%253D2c9880ee7f6e46cd0180b2291c653141%2526courseId%253D2c9880ff803fef9a01809c84a872470b
-Ã‚ƒø ˝¡ø£∫50
-2022 Ω· ¯
-127.0.0.1 - - [25/Aug/2022 11:47:55] "POST /huan_an/exam/batch HTTP/1.1" 200 -
 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
- * Running on http://192.168.20.57:5000
+ * Running on http://192.168.0.106:5000
 [33mPress CTRL+C to quit[0m
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 105-060-619
-huan_an_exam_batch ±ª∑√Œ ,params:  [{'userName': '320882198701060620', 'password': 'kxy112233', 'years': [2022]}]
+127.0.0.1 - - [28/Aug/2022 00:30:00] "GET /form HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [28/Aug/2022 00:30:02] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:03] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:05] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:06] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:07] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:08] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:08] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:09] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:11] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:12] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:13] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:14] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:15] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:16] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:17] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:18] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:19] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:20] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:21] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:22] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:23] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:24] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:25] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:26] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:27] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:28] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:29] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:30] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:31] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:32] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:33] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:34] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:35] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:36] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:37] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:38] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:39] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:40] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:41] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:42] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:43] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:44] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:45] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:46] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:47] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:48] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:49] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:50] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:51] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:52] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:53] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:54] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:55] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:56] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:57] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:58] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:30:59] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:00] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:01] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:02] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:03] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:04] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:05] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:06] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:07] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:08] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:09] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:10] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:11] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:12] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:13] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:14] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:15] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:16] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:17] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:18] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:19] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:20] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:21] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:22] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:23] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:24] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:25] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:26] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:27] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:28] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:29] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:30] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:31] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:32] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:33] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:33] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:34] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:35] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:36] "GET /log HTTP/1.1" 200 -
+huan_an_exam_batch ±ª∑√Œ ,params:  [{'userName': '320882199306070014', 'password': '070014', 'years': [2022]}]
+127.0.0.1 - - [28/Aug/2022 00:31:37] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:38] "GET /log HTTP/1.1" 200 -
 «Î«ÛÕ¯÷∑: https://jshazj.59iedu.com/index
- ‰»Î’À∫≈ 320882198701060620 √‹¬Î:*******ÕÍ≥…
-ªÒ»°—È÷§¬Î£∫8773
-cookies: {'JSESSIONID': '71FC626CC66706D95FABA4B8A38708B4', 'CNZZDATA1279634989': '42264587-1661402052-%7C1661402052', 'UM_distinctid': '182d35943421f8-0c98217390dc7a-6701434-1fa400-182d359434347d'}
+127.0.0.1 - - [28/Aug/2022 00:31:39] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:40] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:41] "GET /log HTTP/1.1" 200 -
+ ‰»Î’À∫≈ 320882199306070014 √‹¬Î:*******ÕÍ≥…
+127.0.0.1 - - [28/Aug/2022 00:31:42] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:43] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:44] "GET /log HTTP/1.1" 200 -
+ªÒ»°—È÷§¬Î£∫9320
+cookies: {'JSESSIONID': 'A7FE40BFA9D50E6918706DCBD7678473', 'CNZZDATA1279634989': '772511309-1661617600-%7C1661617600', 'UM_distinctid': '182e025081cd-09517957703471-6701434-1fa400-182e025081d3de'}
+127.0.0.1 - - [28/Aug/2022 00:31:46] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:47] "GET /log HTTP/1.1" 200 -
 my_course_url:https://jshazj.59iedu.com/center/myStudy/goods/detail?year=2022
-Ω¯»Îøº ‘“≥√Ê
-driver.current_url:https://hwexamv1.59iedu.com/exam/#/fighting/d6bba1ec-c313-4f3e-be0a-4b86b842298c/2/-1?%7B%22objectList%22:%5B%7B%22objectId%22:%222c9880ee7f6e46cd0180b2291c653141%22,%22type%22:%22SchemeId%22%7D,%7B%22objectId%22:%222c9880ff803fef9a01809c84a872470b%22,%22type%22:%22CourseId%22%7D,%7B%22objectId%22:%222c9880cc7f6e48be0180b2291cf63ace%22,%22type%22:%22LearningId%22%7D,%7B%22objectId%22:%22source%22,%22type%22:%22student%22%7D%5D,%22extractQuestionObjects%22:%5B%7B%22objectId%22:%222c9880ee7f6e46cd0180b2291c653141%22,%22type%22:%22SchemeId%22%7D,%7B%22objectId%22:%222c9880ff803fef9a01809c84a872470b%22,%22type%22:%22CourseId%22%7D,%7B%22objectId%22:%222c9880cc7f6e48be0180b2291cf63ace%22,%22type%22:%22LearningId%22%7D,%7B%22objectId%22:%22source%22,%22type%22:%22student%22%7D%5D%7D_%25E3%2580%258A%25E6%2595%25B0%25E5%25AD%2597%25E7%25BB%258F%25E6%25B5%258E%25E6%258A%2580%25E8%2583%25BD%25E5%259F%25B9%25E8%25AE%25AD%25E4%25B8%2593%25E9%25A2%2598%25E3%2580%258B_https%253A%252F%252Fjshazj.59iedu.com%252Fweb%252Ffront%252FcoursePaper%252FrightNowGo%253Fid%253Dd6bba1ec-c313-4f3e-be0a-4b86b842298c%2526schemeId%253D2c9880ee7f6e46cd0180b2291c653141%2526courseId%253D2c9880ff803fef9a01809c84a872470b
-Ã‚ƒø ˝¡ø£∫50
-2022 Ω· ¯
-127.0.0.1 - - [25/Aug/2022 12:54:14] "POST /huan_an/exam/batch HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:48] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:49] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:50] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:51] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:52] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:53] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:54] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:55] "GET /log HTTP/1.1" 200 -
+ * Detected change in 'd:\\project\\py\\ed\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-060-619
+127.0.0.1 - - [28/Aug/2022 00:31:56] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:57] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:58] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:31:59] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:32:00] "GET /log HTTP/1.1" 200 -
 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
- * Running on http://192.168.20.57:5000
+ * Running on http://192.168.0.106:5000
 [33mPress CTRL+C to quit[0m
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 105-060-619
-127.0.0.1 - - [25/Aug/2022 17:22:18] "GET /form HTTP/1.1" 200 -
-127.0.0.1 - - [25/Aug/2022 17:35:30] "GET /form HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-060-619
+ * Detected change in 'd:\\project\\py\\ed\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-060-619
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-060-619
+127.0.0.1 - - [28/Aug/2022 00:36:45] "GET /form HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:36:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [28/Aug/2022 00:36:47] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:36:48] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:36:49] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:36:50] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:36:51] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:36:52] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:36:53] "GET /log HTTP/1.1" 200 -
+huan_an_exam_batch ±ª∑√Œ ,params:  [{'userName': 'asdasd', 'password': 'asdas', 'years': [2022]}]
+127.0.0.1 - - [28/Aug/2022 00:36:54] "[35m[1mGET /log HTTP/1.1[0m" 500 -
+127.0.0.1 - - [28/Aug/2022 00:36:55] "GET /log HTTP/1.1" 200 -
+«Î«ÛÕ¯÷∑: https://jshazj.59iedu.com/index
+127.0.0.1 - - [28/Aug/2022 00:36:56] "[35m[1mGET /log HTTP/1.1[0m" 500 -
+127.0.0.1 - - [28/Aug/2022 00:36:57] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:36:59] "GET /log HTTP/1.1" 200 -
+ ‰»Î’À∫≈ asdasd √‹¬Î:*******ÕÍ≥…
+127.0.0.1 - - [28/Aug/2022 00:36:59] "[35m[1mGET /log HTTP/1.1[0m" 500 -
+127.0.0.1 - - [28/Aug/2022 00:37:00] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:02] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:03] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:04] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:05] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:06] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:07] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:07] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:08] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:10] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:11] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:11] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:12] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:13] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:14] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:16] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:17] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:18] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:19] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:19] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:20] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:21] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:22] "GET /form HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:24] "GET /log HTTP/1.1" 200 -
+huan_an_exam_batch ±ª∑√Œ ,params:  [{'userName': 'asdasd', 'password': 'asdas', 'years': [2022]}]
+127.0.0.1 - - [28/Aug/2022 00:37:25] "[35m[1mGET /log HTTP/1.1[0m" 500 -
+127.0.0.1 - - [28/Aug/2022 00:37:27] "GET /log HTTP/1.1" 200 -
+«Î«ÛÕ¯÷∑: https://jshazj.59iedu.com/index
+127.0.0.1 - - [28/Aug/2022 00:37:28] "[35m[1mGET /log HTTP/1.1[0m" 500 -
+127.0.0.1 - - [28/Aug/2022 00:37:29] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:30] "GET /log HTTP/1.1" 200 -
+ ‰»Î’À∫≈ asdasd √‹¬Î:*******ÕÍ≥…
+127.0.0.1 - - [28/Aug/2022 00:37:31] "[35m[1mGET /log HTTP/1.1[0m" 500 -
+127.0.0.1 - - [28/Aug/2022 00:37:32] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:33] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:34] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:34] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:36] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:37] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:38] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:39] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:40] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:41] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:42] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:43] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:44] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:45] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:46] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:47] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:48] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:49] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:50] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:51] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:52] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:53] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:54] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:55] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:56] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:57] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:58] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:37:59] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:00] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:01] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:02] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:03] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:04] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:05] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:06] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:07] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:08] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:09] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:10] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:11] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:12] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:13] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:14] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:15] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:16] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:17] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:18] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:19] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:20] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:21] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:22] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:23] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:24] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:25] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:26] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:27] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:28] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:29] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:30] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:31] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:32] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:33] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:34] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:35] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:36] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:37] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:38] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:39] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:40] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:41] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:42] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:43] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:44] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:45] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:46] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:47] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:48] "GET /log HTTP/1.1" 200 -
+ * Detected change in 'd:\\project\\py\\ed\\comLogger.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-060-619
+127.0.0.1 - - [28/Aug/2022 00:38:49] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:38:50] "GET /log HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-060-619
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-060-619
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-060-619
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-060-619
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-060-619
+127.0.0.1 - - [28/Aug/2022 00:49:03] "GET /form HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [28/Aug/2022 00:49:05] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:06] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:07] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:08] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:09] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:10] "GET /log HTTP/1.1" 200 -
+huan_an_exam_batch Ë¢´ËÆøÈóÆ,params:  [{'userName': 'aSas', 'password': 'sda', 'years': [2020]}]
+127.0.0.1 - - [28/Aug/2022 00:49:11] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:12] "GET /log HTTP/1.1" 200 -
+ËØ∑Ê±ÇÁΩëÂùÄ: https://jshazj.59iedu.com/index
+127.0.0.1 - - [28/Aug/2022 00:49:13] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:14] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:15] "GET /log HTTP/1.1" 200 -
+ËæìÂÖ•Ë¥¶Âè∑ aSas ÂØÜÁ†Å:*******ÂÆåÊàê
+127.0.0.1 - - [28/Aug/2022 00:49:16] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:17] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:18] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:19] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:20] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:21] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:22] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:23] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:24] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:25] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:26] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:27] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:28] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:29] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:30] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:31] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:32] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:33] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:35] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:36] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:37] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:38] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:39] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:40] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:41] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:42] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:43] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:44] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:45] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:46] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:47] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:48] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:49] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:50] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:51] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:52] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:53] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:54] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:55] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:56] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:57] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:58] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:49:59] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:00] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:01] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:02] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:03] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:04] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:05] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:06] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:07] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:08] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:09] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:10] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:11] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:12] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:13] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:14] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:15] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:16] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:17] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:18] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:19] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:20] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:21] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:22] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:23] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:24] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:25] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:26] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:27] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:28] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:29] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:30] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:31] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:32] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:33] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:34] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:35] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:36] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:37] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:38] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:39] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:40] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:41] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:42] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:43] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:44] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:45] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:46] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:47] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:48] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:49] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:50] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:51] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:52] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:53] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:54] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:55] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:56] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:57] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:58] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:50:59] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:00] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:01] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:02] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:03] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:04] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:05] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:06] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:07] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:08] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:09] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:10] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:11] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:12] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:13] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:14] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:15] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:16] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:17] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:18] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:19] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:20] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:21] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:22] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:23] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:24] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:25] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:26] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:27] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:28] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:29] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:30] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:31] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:32] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:33] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:34] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:35] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:36] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:37] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:38] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:39] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:40] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:41] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:42] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:43] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:44] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:45] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:46] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:47] "GET /log HTTP/1.1" 200 -
+ * Detected change in 'D:\\project\\py\\ed\\huan_an_bussiness.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-060-619
+huan_an_exam_batch Ë¢´ËÆøÈóÆ,params:  [{'userName': 'aSas', 'password': 'sda', 'years': [2020]}]
+127.0.0.1 - - [28/Aug/2022 00:51:48] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:49] "GET /log HTTP/1.1" 200 -
+ËØ∑Ê±ÇÁΩëÂùÄ: https://jshazj.59iedu.com/index
+127.0.0.1 - - [28/Aug/2022 00:51:50] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:51] "GET /log HTTP/1.1" 200 -
+127.0.0.1 - - [28/Aug/2022 00:51:52] "GET /log HTTP/1.1" 200 -
